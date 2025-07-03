@@ -103,7 +103,7 @@ html, body {
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  padding: 0 300px;
+  padding: 0 100px;
   pointer-events: none;
   z-index: 1000;
 }
