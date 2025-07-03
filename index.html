@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>李美慧的作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>李美慧</h1>
+  <p>音频技术 · 声音设计 · 交互音频</p>
+</header>
+
+<nav>
+  <button class="tab active" data-target="interactive">互动音频设计</button>
+  <button class="tab" data-target="coding">音频编程</button>
+  <button class="tab" data-target="audiovisual">视听声音设计</button>
+  <button class="tab" data-target="system">系统集成与扩声</button>
+  <button class="tab" data-target="life">其他</button>
+</nav>
+
+<div class="content">
+
+<div id="interactive" class="section active">
+  <div class="carousel-container">
+    <div class="carousel-track">
+      
+<div class="project">
+ <div class="project-inner">
+  <h3>声音探索叙事游戏</h3>
+  <video src="media/Guide Video.mp4" controls></video>
+    <p class="caption"> <p><strong>项目概述：</strong></p>
+    <p>
+		这是一款结合 Unity 和 Wwise 制作的音频侦探与叙事类游戏。
+		玩家将扮演一名在偏远海滩上醒来的主角，仅通过声音线索，逐步揭开失踪祖父背后的秘密。
+		本项目由我独立完成，包括整体策划、程序开发、音频设计与制作，以及音效样本的录制与处理。
+		游戏通过语音提示、线索物品的音效、环境音景与互动音乐，构建了一个沉浸式的探索叙事世界。
+
+    </p>
+	
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="images/image.png" alt="环境分区 Demo">
+      <p class="caption">环境分区示意图</p>
+    </div>
+    <div class="image-item">
+      <img src="images/image2.png" alt="交互配乐分层 Demo">
+      <p class="caption">交互配乐图层结构</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+        <div class="project">
+          <h3>《爱你如同爱生活》文本可听化</h3>
+          <video src='media/Section 5.mp4' controls></video>
+          <p class="caption"> <p><strong>项目概述：</strong></p>
+          <p>
+          	该项目是一项创造性的可听化作品，通过情感分析将文本转化为音乐。
+			通过分析文本中的情感，该项目将其转化为独特的音乐表达。
+			文本素材取材于中国作家王小波的《爱你如同爱生活》，这是他写给挚爱李银河的一封细腻的情书，表达了爱与生活。
+			该作品运用大连理工大学开发的“cnsenti”情感本体库进行情感分析。
+			该库支持对文本中七种情感的分析：高兴、高兴、悲伤、愤怒、恐惧、厌恶和惊讶。
+			通过使用Python脚本，它可以分析这些情感词在每个句子中出现的频率，为本项目的情感特征检测提供支持。
+          </p>
+		  <div class="image-grid">
+		    <div class="image-item">
+		      <img src="images/Flow Chart.png" alt="流程图">
+		      <p class="caption">项目流程图</p>
+		    </div>
+		    <div class="image-item">
+		      <img src="images/image3.png" alt="工程截图">
+		      <p class="caption">部分工程截图</p>
+		    </div>
+		  </div>
+		  
+        </div>
+        
+
+        <div class="project">
+          <h3>情绪为线索的交互</h3>
+          <video src='media/Emotion.mp4' controls></video>
+          <p class="caption"> <p><strong>项目概述：</strong></p>
+          <p>
+          	本项目
+          </p>
+          <img src="images/emotion1.jpg" alt="情绪为线索的交互">
+        </div>
+        
+    </div>
+    <div class="carousel-controls">
+      <button class="prev-btn">←</button>
+      <button class="next-btn">→</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+<span class="dot " data-index="1"></span>
+<span class="dot " data-index="2"></span>
+    </div>
+  </div>
+</div>
+
+
+<div id="coding" class="section">
+  <div class="carousel-container">
+    <div class="carousel-track">
+      
+        <div class="project">
+          <h3>KSynthFX Project</h3>
+          <video src='media/KSynthFX.mp4' controls></video>
+          <p class="caption"> <p><strong>项目概述：</strong></p>
+          <p>
+          	本项目是一个基于 JUCE 框架开发的虚拟合成器插件。
+          	它使用 Karplus-Strong 算法模拟弦乐器的拨弦音。
+          	该插件可以模拟弦乐器拨弦的声音。
+          	它提供了丰富的音频参数，允许用户调整噪音水平、亮度、失真度、音高滑音等，从而改变弦乐器声音的动态和音质，例如共振、衰减和亮度。
+          	此外，该插件还包含一个步进音序器，允许用户根据预设的步进模式快速创建弦乐器节奏，或者将其用作电子鼓机进行节奏编程。
+          </p>
+         <div class="image-grid">
+           <div class="image-item">
+             <img src="images/Main Signal Flow.png" alt="流程图">
+             <p class="caption">项目核心流程图</p>
+           </div>
+           <div class="image-item">
+             <img src="images/Module Interaction.png" alt="UI与音频引擎模块架构图">
+             <p class="caption">音频引擎模块架构图</p>
+           </div>
+		   <div class="image-item">
+		     <img src="images/Parameter Update Sequence.png" alt="参数更新与实时处理时序图">
+		     <p class="caption">参数更新与实时处理时序图</p>
+		   </div>
+         </div>
+        </div>
+        
+
+        <div class="project">
+          <h3>C++ Drone Music</h3>
+		  <audio src='media/DroneMusic.wav' controls></audio>
+          <p class="caption"> <p><strong>项目概述：</strong></p>
+          <p>
+          	该项目运用合成器技术，打造一套自动化的Drone Music生成系统。
+			它融合了 Unison 合成、FM 调制、LFO 滤波和音序器触发技术，可生成四条不同的音轨，形成富有层次感和节奏感的Drone Music音景。
+			其目标是营造一种平静、深沉、冥想的氛围，并融入佛教元素。整体音效柔和舒缓，并融入木刻打击乐，如同寺庙钟声的回响，引导听众进入宁静祥和的心灵状态。
+          </p>
+         <div class="image-grid">
+           <div class="image-item">
+             <img src="images/Flow Chart Drone.png" alt="流程图">
+             <p class="caption">项目流程图</p>
+           </div>
+		 </div>
+        </div>
+        
+    </div>
+    <div class="carousel-controls">
+      <button class="prev-btn">←</button>
+      <button class="next-btn">→</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+<span class="dot " data-index="1"></span>
+    </div>
+  </div>
+</div>
+
+
+<div id="audiovisual" class="section">
+  <div class="carousel-container">
+    <div class="carousel-track">
+      
+        <div class="project">
+          <h3>动画《小手的旅程》</h3>
+          <video src='media/Hand.mp4' controls></video>
+          <p>
+          	女孩乘大巴去参加市区剧院的演出，意外与车流触发了一场充满想象力的旅程——手指小人的跑酷之旅。
+			作品荣获多个奖项以及第十九届中国（北京）国际大学生动画节白杨奖最佳音乐与声音提名。
+          </p>
+         <div class="image-grid">
+           <div class="image-item">
+             <img src="images/Post.jpg" alt="作品海报">
+             <p class="caption">作品海报</p>
+           </div>
+           <div class="image-item">
+             <img src="images/Award.jpg" alt="白杨奖最佳音乐与声音提名">
+             <p class="caption">白杨奖最佳音乐与声音提名</p>
+           </div>
+	     </div>
+        </div>
+        
+        <div class="project">
+          <h3>动画《我的室友是杀手》</h3>
+          <video src='media/Roommate.mp4' controls></video>
+          <p>
+          	小狗是一名刚刚步入社会的有志青年，为了节约开支选择和别人合租特价房，它来到广告上所写的地址，没想到它的室友竟然是......
+			影片音效制作与音乐编辑均由个人完成，获得第十届声音学院奖短片类三等奖奖项。
+          </p>
+
+        </div>
+        
+        <div class="project">
+          <h3>荣誉奖状展示</h3>
+          
+          
+          <img src="images/award1.jpg" alt="荣誉奖状展示">
+        </div>
+        
+    </div>
+    <div class="carousel-controls">
+      <button class="prev-btn">←</button>
+      <button class="next-btn">→</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+<span class="dot " data-index="1"></span>
+<span class="dot " data-index="2"></span>
+    </div>
+  </div>
+</div>
+
+
+<div id="system" class="section">
+  <div class="carousel-container">
+    <div class="carousel-track">
+      
+        <div class="project">
+          <h3>音响系统集成</h3>
+         <div class="image-grid">
+          <p>
+          	本项目为沉浸式演艺秀场的音响系统设计方案。
+			我担任组长，全面负责了项目的系统架构设计、图纸绘制及技术报告撰写。
+			荣获大赛第七届“易科杯”音响系统设计大赛二等奖。
+          </p>
+		   <div class="image-item">
+		     <img src="images/System.jpg" alt="沉浸声剧场系统图设计">
+		     <p class="caption">沉浸声剧场系统图设计</p>
+		   </div>
+		   <div class="image-item">
+		     <img src="images/image5.png" alt="颁奖现场">
+		     <p class="caption">颁奖现场</p>
+		   </div>
+		   <div class="image-item">
+		     <img src="images/image6.jpg" alt="系统分区连接图">
+		     <p class="caption">系统分区连接图</p>
+		   </div>
+		   <div class="image-item">
+		     <img src="images/image4.png" alt="易科杯系统设计大赛第二名">
+		     <p class="caption">易科杯系统设计大赛第二名</p>
+		   </div>
+		 </div>
+        </div>
+        
+        <div class="project">
+          <h3>转播与现场扩声</h3>
+		   <div class="image-grid broadcast-grid">
+		     <div class="image-item">
+		       <img src="images/image 8.png" alt="棱镜mini戏剧节现场照">
+		       <p class="caption">棱镜mini戏剧节现场照</p>
+		     </div>
+		     <div class="image-item">
+		       <img src="images/image9.png" alt="棱镜mini戏剧节工作照">
+		       <p class="caption">棱镜mini戏剧节工作照</p>
+		     </div>
+			 <div class="image-item">
+			   <img src="images/image7.png" alt="棱镜mini戏剧节志愿证书">
+			   <p class="caption">棱镜mini戏剧节志愿证书</p>
+			 </div>
+		     <div class="image-item">
+		       <img src="images/image10.png" alt="2023中国网球公开赛工作证">
+		       <p class="caption">2023中国网球公开赛工作证</p>
+		     </div>
+			 <div class="image-item">
+			   <img src="images/image11.png" alt="2023中国网球公开赛工作照">
+			   <p class="caption">2023中国网球公开赛工作照</p>
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image12.png" alt="2023中网负责人分配图">
+			   <p class="caption">2023中网负责人分配图</p>
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image13.png" alt="2022级中国传媒大学开学典礼工作照">
+			   <p class="caption">2022级中国传媒大学开学典礼工作照</p>
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image14.png" alt="2022级中国传媒大学开学典礼工作照">
+			   <p class="caption">2022级中国传媒大学开学典礼工作照</p>
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image16.png" alt="2022级中国传媒大学开学典礼合照">
+			   <p class="caption">2022级中国传媒大学开学典礼合照</p>
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image15.png" alt="中国传媒大学电视台工作照">
+			   <p class="caption">中国传媒大学电视台工作照</p>
+			 </div>
+
+		   </div>
+        </div>
+        
+    </div>
+    <div class="carousel-controls">
+      <button class="prev-btn">←</button>
+      <button class="next-btn">→</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+<span class="dot " data-index="1"></span>
+    </div>
+  </div>
+</div>
+
+
+<div id="life" class="section">
+  <div class="carousel-container">
+    <div class="carousel-track">
+      
+        <div class="project">
+          <h3>工作生活照</h3>
+          
+          
+          <img src="images/life1.jpg" alt="工作生活照">
+        </div>
+        
+
+        <div class="project">
+          <h3>更多幕后</h3>
+          
+          
+          <img src="images/life2.jpg" alt="更多幕后">
+        </div>
+        
+    </div>
+    <div class="carousel-controls">
+      <button class="prev-btn">←</button>
+      <button class="next-btn">→</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+<span class="dot " data-index="1"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  📄 <a href="files/简历.pdf" target="_blank">下载简历</a><br>
+  📧 联系：lmh23023@126.com ｜ 微信：mianqiu0810
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
