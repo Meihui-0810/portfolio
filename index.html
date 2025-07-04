@@ -59,12 +59,11 @@
           <video src='media/Section 5.mp4' controls></video>
           <p class="caption"> <p><strong>项目概述：</strong></p>
           <p>
-          	该项目是一项创造性的可听化作品，通过情感分析将文本转化为音乐。
-			通过分析文本中的情感，该项目将其转化为独特的音乐表达。
+          	本项目是一项可听化（sonification）实践，旨在通过情感分析将中文文本转换为具有对应情绪的音乐。
 			文本素材取材于中国作家王小波的《爱你如同爱生活》，这是他写给挚爱李银河的一封细腻的情书，表达了爱与生活。
-			该作品运用大连理工大学开发的“cnsenti”情感本体库进行情感分析。
-			该库支持对文本中七种情感的分析：高兴、高兴、悲伤、愤怒、恐惧、厌恶和惊讶。
-			通过使用Python脚本，它可以分析这些情感词在每个句子中出现的频率，为本项目的情感特征检测提供支持。
+			该作品运用大连理工大学开发的“cnsenti”情感本体库进行情感分析，支持对文本中七种情感的分析：高兴、激动、悲伤、愤怒、恐惧、厌恶和惊讶。
+			音乐交互通过Python与Max/MSP实时通信实现。Python分析文本情绪后，将情绪类别、强度、持续时间等数据通过OSC协议发送给Max/MSP。Max
+			接收数据后，根据情绪类型生成相应的和弦与旋律，并调整节奏与速度。音乐以钢琴音色播放，同时配合原文与翻译文本的可视化展示，实现文本与音乐的同步、动态交互。
           </p>
 		  <div class="image-grid">
 		    <div class="image-item">
@@ -210,14 +209,7 @@
           </p>
 
         </div>
-        
-        <div class="project">
-          <h3>其他奖项荣誉</h3>
-          
-          
-          <img src="images/award1.jpg" alt="荣誉奖状展示">
-        </div>
-        
+
     </div>
     <div class="carousel-controls">
       <button class="prev-btn">←</button>
@@ -329,17 +321,44 @@
       
         <div class="project">
           <h3>其他工作照</h3>
+		   <div class="image-grid broadcast-grid">
+		     <div class="image-item">
+		       <img src="images/image21.png" alt="声音交互装置展海报">
+		       <p class="caption">声音交互装置展海报</p>
+		     </div>
+			 <div class="image-item">
+			   <img src="images/image22.png" alt="声音交互装置展导览">
+			   <p class="caption">声音交互装置展导览</p>
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image23.jpg" alt="声音交互装置展现场照">
+			   <p class="caption">声音交互装置展现场照</p>
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image24.jpg" alt="声音交互装置展现场照">
+			   <p class="caption">声音交互装置展现场照</p>
+			 </div>
+			</div>          
           
-          
-          <img src="images/life1.jpg" alt="工作照">
         </div>
         
 
         <div class="project">
           <h3>生活照</h3>
-          
-          
-          <img src="images/life2.jpg" alt="生活照">
+		    <div class="image-grid broadcast-grid">
+		     <div class="image-item">
+		       <img src="images/image25.jpg" alt="生活照">
+		     </div>
+			 <div class="image-item">
+			   <img src="images/image26.jpg" alt="生活照">
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image27.jpg" alt="生活照">
+			 </div>
+			 <div class="image-item">
+			   <img src="images/image28.jpg" alt="生活照">
+			 </div> 
+		    </div>
         </div>
         
     </div>
@@ -357,7 +376,7 @@
 </div>
 
 <div class="footer">
-  📄 <a href="files/简历.pdf" target="_blank">下载简历</a><br>
+  📄 <a href="files/李美慧简历_2025.pdf" target="_blank">下载简历</a><br>
   📧 联系：lmh23023@126.com ｜ 微信：mianqiu0810
 </div>
 
